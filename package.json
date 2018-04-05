@@ -1,0 +1,71 @@
+{
+  "name": "j-lemmon",
+  "version": "1.0.0",
+  "description": "John Lemmon ",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "webpack --config ./client/webpack.config.js",
+    "dev": "nodemon --watch server/index.js & yarn build --watch",
+    "test": "jest --watch --noStackTrace",
+    "postinstall": "webpack --config ./client/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Timothy-Tolley/j-lemmon.git"
+  },
+  "author": "New Territory w/ Timothy Tolley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Timothy-Tolley/j-lemmon/issues"
+  },
+  "homepage": "https://github.com/Timothy-Tolley/j-lemmon#readme",
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "stage-3"
+    ]
+  },
+  "engines": {
+    "node": "^8.0.0",
+    "yarn": ">= 0.18.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "css-loader": "^0.28.10",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "jsdom": "^11.7.0",
+    "node-sass": "^4.7.2",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-image-gallery": "^0.8.7",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-scrollable-anchor": "^0.6.1",
+    "react-three-renderer": "^3.2.4",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.2",
+    "superagent": "^3.8.2",
+    "three": "0.86.0",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.3.0",
+    "nodemon": "^1.14.12",
+    "react-addons-test-utils": "^15.6.2",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-livereload-plugin": "^1.0.0"
+  }
+}

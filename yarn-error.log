@@ -1,0 +1,105 @@
+Arguments: 
+  /Users/Tim/.nvm/versions/node/v8.9.4/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js dev
+
+PATH: 
+  /Users/Tim/.nvm/versions/node/v8.9.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.4
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "j-lemmon",
+    "version": "1.0.0",
+    "description": "John Lemmon ",
+    "main": "server/index.js",
+    "scripts": {
+      "start": "node server/index.js",
+      "build": "webpack --config ./client/webpack.config.js",
+      "dev": "nodemon --watch server/index.js & yarn build --watch",
+      "test": "jest --watch --noStackTrace",
+      "postinstall": "webpack --config ./client/webpack.config.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Timothy-Tolley/j-lemmon.git"
+    },
+    "author": "New Territory w/ Timothy Tolley",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Timothy-Tolley/j-lemmon/issues"
+    },
+    "homepage": "https://github.com/Timothy-Tolley/j-lemmon#readme",
+    "babel": {
+      "presets": [
+        "env",
+        "react",
+        "stage-3"
+      ]
+    },
+    "engines": {
+      "node": "^8.0.0",
+      "yarn": ">= 0.18.0"
+    },
+    "dependencies": {
+      "babel-core": "^6.26.0",
+      "babel-loader": "^7.1.2",
+      "babel-preset-env": "^1.6.1",
+      "babel-preset-react": "^6.24.1",
+      "babel-preset-stage-3": "^6.24.1",
+      "body-parser": "^1.18.2",
+      "css-loader": "^0.28.10",
+      "dotenv": "^5.0.0",
+      "express": "^4.16.2",
+      "node-sass": "^4.7.2",
+      "react": "^16.2.0",
+      "react-dom": "^16.2.0",
+      "react-image-gallery": "^0.8.7",
+      "react-redux": "^5.0.7",
+      "react-router-dom": "^4.2.2",
+      "react-scrollable-anchor": "^0.6.1",
+      "redux": "^3.5.2",
+      "redux-thunk": "^2.1.0",
+      "sass-loader": "^6.0.6",
+      "style-loader": "^0.20.2",
+      "superagent": "^3.8.2",
+      "webpack": "^3.10.0"
+    },
+    "devDependencies": {
+      "enzyme": "^3.3.0",
+      "enzyme-adapter-react-16": "^1.1.1",
+      "jest": "^22.3.0",
+      "nodemon": "^1.14.12",
+      "react-addons-test-utils": "^15.6.2",
+      "webpack-dev-server": "^2.11.1",
+      "webpack-livereload-plugin": "^1.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 1
+  Command: sh
+  Arguments: -c nodemon --watch server/index.js & yarn build --watch
+  Directory: /Users/Tim/Workspace/j-lemmon
+  Output:
+  
+      at ProcessTermError.MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
+      at new ProcessTermError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:30281:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
