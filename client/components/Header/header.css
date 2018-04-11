@@ -1,0 +1,13 @@
+.headerText {
+  color: white;
+}
+
+.headerContainer{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 99;
+  left: 38%;
+  top: 5%;
+}

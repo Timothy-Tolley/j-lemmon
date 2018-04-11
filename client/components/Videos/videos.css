@@ -1,0 +1,18 @@
+p{
+  color: black;
+  
+}
+
+.videosContainer { 
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+  left: 20%;
+  top: 20%;
+}
+
+.instaVids{
+  width: 100px;
+  padding: 10px;
+}
