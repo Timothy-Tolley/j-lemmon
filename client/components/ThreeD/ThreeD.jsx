@@ -76,8 +76,8 @@ class ThreeD extends Component {
     light2.position.x = -50
     scene.add(light2)
     // // ambient Light
-    // const ambient = new THREE.AmbientLight(0xffffff)
-    // scene.add(ambient)
+    const ambient = new THREE.AmbientLight(0xffffff)
+    scene.add(ambient)
 
     // window resizing
     window.addEventListener('resize', this.onWindowResize, false)
